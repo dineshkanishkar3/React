@@ -7,7 +7,7 @@ export const BackGroundContainer = styled.header`
         background-color:#000;
         background : linear-gradient(rgba(0, 0, 0, 0.5),
                        rgba(0, 0, 0, 0.5)), url(${({ src,bg }) => (src ? `/images/misc/${src}.jpg` :bg?'/images/misc/background.jpg':'none')}) no-repeat;
-                       background-size: 100%;
+                       background-size: cover ;
         border-bottom : ${({bg})=>bg?'8px solid #222':'none'};
         background-blend-mode:darken,luminosity ;
         color:#fff;
@@ -15,9 +15,10 @@ export const BackGroundContainer = styled.header`
         flex-direction:column;
         margin:0;
         @media(max-width:600px){
-                
+        background : linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url(${({ src,bg }) => (src ? `/images/misc/${src}.jpg` :'none')}) no-repeat;
+                       background-size: cover ;
         }
-       
 `
 export const Nav = styled.nav`
         padding: 1.5em 3em;

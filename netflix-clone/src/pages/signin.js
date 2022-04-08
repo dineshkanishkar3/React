@@ -29,7 +29,7 @@ function SignIn(){
        
     return(
         < >
-            <HeaderContainer isform >
+            <HeaderContainer  >
             <Form onSubmit={handleSignin} method="POST"   error={error}>
                 <Form.Title signIn>Sign In</Form.Title>
                 { error && <Form.Error>{error}</Form.Error>}

@@ -21,7 +21,7 @@ export const Panel = styled.form`
                 max-width:700px;
         }
         @media(max-width:950px){
-                width:65%;
+                width:60%;
                 min-width:475px;
                 grid-template-columns: 1fr;
                 grid-template-areas:'text' 'input' 'button';
