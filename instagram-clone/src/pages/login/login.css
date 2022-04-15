@@ -1,0 +1,124 @@
+.main-container{
+    padding-top: 10%;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    max-width: 400px;
+    margin-bottom: .5em;
+}
+
+.jumbotron{
+    display: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input{
+    border: .5px solid lightgrey;
+    padding: .6em 1em;
+    margin-bottom: .60em;
+    font-size: .75rem;
+    
+}
+button{
+    font-size: .9rem;
+    margin-top: .75em;
+    background-color: #17A9FD;
+    color: white;
+    padding: .25em 0;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+form img{
+    margin: 2.5em auto;
+    width: 65%;
+}
+.form-container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.or {
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    margin-bottom: 2em;
+  }
+  .or:before, .or:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid lightgray;
+    margin: auto;
+  }
+  .or:before {
+    margin-right: 10px
+  }
+  .or:after {
+    margin-left: 10px
+  }
+
+  .fb-signup{
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      font-weight: bold;
+      font-size: .9rem;
+      color: darkblue;
+  }
+  .fb-signup-logo{
+      width: 18px;
+      margin-right: .75em;
+  }
+  .forgot-password{
+      align-self: center;
+      margin: 1em 0;
+      font-size: .8rem;
+  }
+  .signup{
+    font-size: .9rem;
+    margin: 1em;
+  }
+  .signup-link{
+      color: #17A9FD;
+      font-weight: 500;
+  }
+  .app-links{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+      margin-top: 1em;
+      font-size: .9rem;
+    }
+    .app-icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1em;
+        grid-gap: 10px;
+        
+    }
+  .app-icons img{
+      width: 125px;
+      justify-self: center;
+  }
+  @media(min-width:450px) {
+    .container{
+    width:65%;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    }
+}
+@media(min-width:875px){
+    .jumbotron{
+        display: block;
+    }
+}

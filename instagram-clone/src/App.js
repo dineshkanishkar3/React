@@ -2,6 +2,7 @@ import React,{lazy,Suspense} from 'react';
 import { BrowserRouter as Router ,Route,Routes } from 'react-router-dom';
 
 
+
 const Login = lazy(()=>import('./pages/login'))
 function App() {
   return (
